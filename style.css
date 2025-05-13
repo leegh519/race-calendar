@@ -16,6 +16,60 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(to bottom, #f6f9fc, #ffffff);
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+  line-height: 1.4;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.store-button img {
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.store-button img:hover {
+  transform: scale(1.05);
+}
+
+.hero-background img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1000px;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.95;
+}
 
 .section {
   text-align: center;
